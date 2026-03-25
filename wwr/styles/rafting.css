@@ -1,26 +1,73 @@
-:root {
-    --primary-color: #055a05;
-    --accent1-color: #262626;
-    --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
 }
 
 header {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px;
-    width: 840px;
-    margin: 0 auto;
-    color: var(--accent2-color);
+    grid-template-columns: 150px 1fr;
+    background-color: #b7a8d6;
+    padding: 20px;
+    align-items: start;
 }
 
 header img {
-    width: 150px;
-    height: auto;
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+.hero article {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+section {
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.history {
+    background-color: #f5f5f5;
+}
+
+.adventures {
+    height: 120px;
+    background-color: #f5f5f5;
 }
 
 * {
@@ -30,194 +77,115 @@ header img {
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    font-family: Arial, sans-serif;
 }
 
-main {
-    max-width: 840px;
-    margin: 0 auto;
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: #b7a8d6;
+    padding: 20px;
+    align-items: start;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 0 30px grey;
-}
-
-footer {
-    width: 840px;
-    margin-top: 15px;
-    margin: 0 auto;
-    border-top: 1px solid #000;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-}
-
-footer img {
-    width: 50px;
-    height: auto;
-    margin-left: 10px;
-}
-
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
-    background-color: var(--accent2-color);
-    padding: 10px;
-    margin: 16px;
-    border-radius: 5px;
-}
-
-nav {
-    display: flex;
-    background-color: #333;
-    text-align: center;
-    padding: 1rem;
-    justify-content: space-around;
+header img {
+    width: 100px;
 }
 
 nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+.hero {
+    position: relative;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
     display: block;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    text-decoration: none;
 }
 
-p {
-    padding: 0;
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
 }
 
-section article {
-    margin: 16px;
-    padding: 8px;
-}
-
-socialmedia a {
-    text-decoration: none;
-    display: flex;
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+    background: #eee;
+    border: 1px solid #999;
+    padding: 10px;
+    display: grid;
+    align-items: center;
     gap: 15px;
+}
+
+.hero article img {
+    width: 120px;
+    height: auto;
+    float: left;
+}
+
+section {
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.history {
+    background-color: #f5f5f5;
+}
+
+.adventures {
+    height: 120px;
+    background-color: #f5f5f5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b7a8d6;
+    padding: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia img {
     width: 30px;
-
 }
 
-.hero {
-    display: block;
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.content {
-    position: absolute;
-    top: 17rem;
-    left: 1rem;
-    right: 1rem;
-
-}
-
-h1 {
-    position: absolute;
-    top: 1rem;
-    color: #3333;
-    background-color: transparent;
-    text-align: center;
-    margin-bottom: 10px;
-    left: 15rem;
-}
-
-.hero article {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border: 2px solid #000;
-    margin: 0;
-    position: absolute;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin: 10px;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+footer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 40px auto;
+    background-color: #b7a8d6;
     padding: 20px;
 }
 
-.history h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
-.history img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.history p {
-    line-height: 1.6;
-    color: #444;
-    text-align: justify;
-}
-
-.adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-.adventures h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 2rem;
-    color: #1a4d8c;
-    margin-bottom: 20px;
-}
-
-.adventures figure {
-    margin: 0;
-    text-align: center;
-}
-
-.adventures img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.adventures img:hover {
-    transform: scale(1.05);
-}
-
-.adventures figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-    font-size: 0.9rem;
+.socialmedia img {
+    width: 30px;
 }
