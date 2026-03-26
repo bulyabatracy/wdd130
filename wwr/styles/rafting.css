@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -40,61 +34,10 @@ nav a {
     font-size: 24px;
 }
 
-.hero article {
-    background: #eee;
-    border: 1px solid #999;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
-}
-
-section {
-    margin: 20px;
-    border: 1px solid #333;
-    padding: 20px;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.history {
-    background-color: #f5f5f5;
-}
-
-.adventures {
-    height: 120px;
-    background-color: #f5f5f5;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    background-color: #b7a8d6;
-    padding: 20px;
-    align-items: start;
-}
-
-header img {
-    width: 100px;
-}
-
-nav a {
-    text-decoration: none;
-    color: blue;
 }
 
 .hero {
@@ -106,15 +49,6 @@ nav a {
 .hero img {
     width: 100%;
     height: auto;
-    display: block;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
 }
 
 .hero article {
@@ -125,15 +59,20 @@ nav a {
     background: #eee;
     border: 1px solid #999;
     padding: 10px;
-    display: grid;
+    display: flex;
     align-items: center;
     gap: 15px;
+    flex-direction: row-reverse;
+}
+
+.hero article .text {
+    order: 1;
 }
 
 .hero article img {
     width: 120px;
     height: auto;
-    float: left;
+    float: right;
 }
 
 section {
@@ -164,6 +103,10 @@ footer {
     padding: 20px;
 }
 
+footer p {
+    align-items: center;
+}
+
 .socialmedia {
     display: flex;
     gap: 10px;
@@ -171,14 +114,6 @@ footer {
 
 .socialmedia img {
     width: 30px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b7a8d6;
-    padding: 20px;
 }
 
 .socialmedia {
