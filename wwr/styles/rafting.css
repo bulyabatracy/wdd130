@@ -1,10 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
 
 header {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr;
     background-color: #b7a8d6;
     padding: 20px;
     align-items: start;
@@ -21,23 +27,24 @@ nav ul {
     list-style: none;
 }
 
+nav {
+    margin-top: 10px;
+}
+
 nav a {
     text-decoration: none;
     color: blue;
 }
 
 .hero h1 {
+    width: 100%;
+    color: black;
     position: absolute;
-    top: 40%;
+    top: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
 }
 
 .hero {
@@ -79,6 +86,7 @@ section {
     margin: 20px;
     border: 1px solid #333;
     padding: 20px;
+    text-align: center;
 }
 
 section h2 {
@@ -123,4 +131,9 @@ footer p {
 
 .socialmedia img {
     width: 30px;
+}
+
+.foot p {
+    text-align: center;
+    width: 100%;
 }
