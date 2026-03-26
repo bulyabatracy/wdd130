@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #055a05;
+    --accent1-color: #262626;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--accent1-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-color);
+    padding: 20px;
+    align-items: start;
+    color: var(--accent-color);
+}
+
+header img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+.hero h1 {
+    width: 100%;
+    color: black;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.hero {
+    position: relative;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+    background: rgba(225, 225, 225, 0.9);
+    border: 1px solid #999;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row-reverse;
+}
+
+.hero article .text {
+    order: 1;
+}
+
+.hero article img {
+    width: 120px;
+    height: auto;
+    float: right;
+}
+
+section {
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+
+}
+
+.history {
+    background-color: #f5f5f5;
+}
+
+.adventures {
+    height: 120px;
+    background-color: #f5f5f5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b7a8d6;
+    padding: 20px;
+}
+
+footer p {
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+.foot p {
+    text-align: center;
+    width: 100%;
+}
