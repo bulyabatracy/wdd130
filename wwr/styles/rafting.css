@@ -60,7 +60,7 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--accent1-color);
     padding: 10px 20px;
 }
 
@@ -68,6 +68,7 @@ nav a {
 .history {
     text-align: center;
     padding: 20px;
+    background-color: var(--accent2-color);
 }
 
 .history-content {
@@ -86,7 +87,7 @@ nav a {
     bottom: 20px;
     left: 40px;
     right: 40px;
-    background: rgba(225, 225, 225, 0.9);
+    background: var(--accent2-color);
     border: 1px solid #999;
     padding: 10px;
     display: flex;
@@ -109,6 +110,11 @@ nav a {
 .adventures {
     text-align: center;
     padding: 20px;
+    font-family: var(--heading-font);
+}
+
+.adventure h2 {
+    background-color: var(--accent2-color);
 }
 
 .adventure-gallery {
@@ -135,7 +141,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #b9a7d6;
+    background-color: var(--primary-color);
     padding: 10px 20px;
 }
 
