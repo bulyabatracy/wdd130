@@ -16,102 +16,115 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
-        <img src="images/logo.jpeg" alt="Rafting Logo">
+    <header>
+        <img src="images/logo.jpeg" alt="Logo">
 
         <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Trips</a>
+            <a href="#">Contact Us</a>
         </nav>
     </header>
 
+    <!-- COMPANY INFO -->
+    <section class="company-info">
+        <h2>White Water Rafting Company</h2>
+        <p>123 Main River Street<br>
+            Kolob, California<br>
+            +1 999 999 9999<br>
+            info@whitewater.com</p>
+    </section>
+
     <main>
 
-        <!-- COMPANY INFO (CENTERED) -->
-        <section class="company-info">
-            <h1>White Water Rafting Company</h1>
-            <p><strong>123 Main River Street</strong></p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 272 </p>
-            <p>info@whitewater.com</p>
-        </section>
+        <div class="main-content">
 
-        <!-- MAP + FORM -->
-        <section class="contact-layout">
-
-            <!-- LEFT-CENTERED: MAP -->
-            <div class="map-box">
+            <!-- MAP -->
+            <div class="map">
                 <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
             </div>
 
-            <!-- RIGHT-CENTERED: FORM -->
-            <form class="form-box">
+            <!-- FORM -->
+            <form action="#" method="post">
 
-                <label>Name</label>
-                <input type="text" placeholder="Placeholder">
+                <!-- NAME -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
 
-                <label>Email</label>
-                <input type="email" placeholder="Placeholder">
+                <!-- EMAIL -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
 
+                <!-- RADIO BUTTONS -->
                 <p>Message Purpose</p>
 
-                <label><input type="radio" name="purpose"> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
-
-                <label>Message</label>
-                <textarea placeholder="Type here"></textarea>
-
-                <label class="checkbox">
-                    <input type="checkbox">
-                    Please Subscribe me to the monthly newsletter
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general">
+                    General Inquiry
                 </label>
 
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- TEXTAREA -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <!-- CHECKBOX -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- BUTTON -->
                 <button type="submit">Get in Touch!</button>
 
             </form>
 
-        </section>
-
-        <!-- EMPLOYEES -->
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-
-            <div class="employee-cards">
-
-                <figure>
-                    <img src="images/photo.webp" alt="Employee">
-                    <figcaption>Employee Profile</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/photo2.webp" alt="Employee">
-                    <figcaption>Employee Profile</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/photo3.webp" alt="Employee">
-                    <figcaption>Employee Profile</figcaption>
-                </figure>
-
-            </div>
-        </section>
+        </div>
 
     </main>
+
+    <!-- EMPLOYEES -->
+    <section class="employees">
+        <h3>We Are Here to Serve You</h3>
+
+        <div class="employee-list">
+            <div>
+                <img src="images/employee1.jpg" alt="Employee" width="80">
+                <p>Nangi</p>
+            </div>
+
+            <div>
+                <img src="images/employee2.webp" alt="Employee" width="80">
+                <p>Baker</p>
+            </div>
+
+            <div>
+                <img src="images/employee3.webp" alt="Employee" width="80">
+                <p>Warner</p>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; 2026 White Water Rafting | Tracy Bulyaba</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt=""></a>
-            <a href="#"><img src="images/twitter.png" alt=""></a>
-            <a href="#"><img src="images/instagram.png" alt=""></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
         </nav>
+
     </footer>
 
 </body>
