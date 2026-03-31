@@ -20,76 +20,78 @@
         <img src="images/logo.jpeg" alt="Logo">
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Trips</a>
-            <a href="#">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <!-- COMPANY INFO -->
-    <section class="company-info">
-        <h2>White Water Rafting Company</h2>
-        <p>123 Main River Street<br>
-            Kolob, California<br>
-            +1 999 999 9999<br>
-            info@whitewater.com</p>
-    </section>
 
     <main>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>
+                Kolob, California<br>
+                +1 999 999 9999<br>
+                info@whitewater.com</p>
 
-        <div class="main-content">
 
-            <!-- MAP -->
-            <div class="map">
-                <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
+            <div class="main-content">
+
+                <!-- MAP -->
+                <div class="map">
+                    <iframe
+                      src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
+                </div>
+
+                <!-- FORM -->
+                <form action="#" method="post">
+
+                    <!-- NAME -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <!-- EMAIL -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <!-- RADIO BUTTONS -->
+                    <p>Message Purpose</p>
+
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general">
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+
+                    <!-- TEXTAREA -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <!-- CHECKBOX -->
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <!-- BUTTON -->
+                    <button type="submit">Get in Touch!</button>
+
+                </form>
+
             </div>
-
-            <!-- FORM -->
-            <form action="#" method="post">
-
-                <!-- NAME -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-
-                <!-- EMAIL -->
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-
-                <!-- RADIO BUTTONS -->
-                <p>Message Purpose</p>
-
-                <label for="general">
-                    <input type="radio" id="general" name="purpose" value="general">
-                    General Inquiry
-                </label>
-
-                <label for="reservation">
-                    <input type="radio" id="reservation" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
-
-                <label for="suggestion">
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
-
-                <!-- TEXTAREA -->
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-
-                <!-- CHECKBOX -->
-                <label for="subscribe">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <!-- BUTTON -->
-                <button type="submit">Get in Touch!</button>
-
-            </form>
-
-        </div>
+        </section>
 
     </main>
 

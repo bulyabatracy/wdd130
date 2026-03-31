@@ -131,21 +131,20 @@ form button:hover {
 }
 
 /* FOOTER */
-footer {
-    background-color: #b7a7d6;
-    padding: 20px;
+.footer {
+    background-color: #b8a9d9;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-/* SOCIAL MEDIA */
-.socialmedia a {
-    margin-left: 10px;
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia img {
     width: 30px;
+    align-items: center;
 }
 
 .footer p {
