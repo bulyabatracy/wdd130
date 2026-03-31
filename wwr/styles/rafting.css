@@ -1,10 +1,20 @@
 /* HEADER */
 .header {
     background-color: #b8a9d9;
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header img {
+    width: 150px;
+    height: auto;
 }
 
 /* NAV */
@@ -33,6 +43,11 @@
     width: 350px;
     height: 250px;
     border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+    align-items: center;
+
 }
 
 /* FORM */
@@ -41,6 +56,7 @@
     flex-direction: column;
     width: 350px;
     gap: 10px;
+    align-items: center;
 }
 
 /* TEXTAREA */
@@ -71,8 +87,6 @@ textarea {
     background-color: #b8a9d9;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
 }
 
 .socialmedia {
@@ -82,4 +96,10 @@ textarea {
 
 .socialmedia img {
     width: 30px;
+    align-items: center;
+}
+
+.footer p {
+    text-align: center;
+    width: 100%;
 }
