@@ -40,7 +40,7 @@ header nav a {
     margin: 20px 0;
 }
 
-.company-info h2 {
+.company-info h1 {
     margin-bottom: 10px;
 }
 
@@ -117,7 +117,7 @@ form button:hover {
     text-align: center;
 }
 
-.employees h3 {
+.employees h2 {
     margin-bottom: 20px;
 }
 
