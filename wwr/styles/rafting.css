@@ -11,27 +11,56 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* HEADER CONTAINER */
 header {
-    background-color: #b7a7d6;
-    padding: 20px;
+    background-color: #b7a9d6;
+    /* light purple */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 40px;
+    border: 1px solid #555;
 }
 
+/* LOGO */
 header img {
-    width: 100px;
+    width: 120px;
+    height: auto;
 }
 
-/* NAVIGATION */
-header nav a {
+/* NAV CONTAINER */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    /* no gaps between boxes */
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV LINKS (BOX STYLE) */
+header nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    background-color: #e6e6e6;
+    color: #000;
     text-decoration: none;
-    color: black;
-    background-color: #ddd;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 5px;
+    border: 1px solid #555;
+    font-size: 14px;
+}
+
+/* REMOVE DOUBLE BORDERS BETWEEN LINKS */
+header nav ul li a {
+    border-right: none;
+}
+
+header nav ul li:last-child a {
+    border-right: 1px solid #555;
+}
+
+/* HOVER EFFECT (optional but nice) */
+header nav ul li a:hover {
+    background-color: #d0d0d0;
 }
 
 /* COMPANY INFO */
@@ -44,73 +73,75 @@ header nav a {
     margin-bottom: 10px;
 }
 
-/* MAIN LAYOUT */
+/* MAIN CONTAINER */
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* COMPANY INFO */
+.company-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* MAIN CONTENT (MAP + FORM) */
 .main-content {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 20px;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
+    margin: 30px 0;
 }
 
-/* MAP */
+/* MAP (LEFT) */
 .map {
-    width: 350px;
-    height: 250px;
-    background-color: #ccc;
+    flex: 1;
 }
 
-/* FORM */
-form {
-    width: 350px;
-}
-
-/* FORM ELEMENTS */
-form label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
+.map iframe {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    height: 260px;
+    border: 1px solid black;
 }
 
-form textarea {
+/* FORM (RIGHT) */
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* INPUTS */
+input,
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid black;
+}
+
+/* TEXTAREA */
+textarea {
     height: 80px;
-    resize: vertical;
-}
-
-/* RADIO BUTTONS */
-form input[type="radio"] {
-    margin-right: 5px;
 }
 
 /* CHECKBOX */
-form input[type="checkbox"] {
-    margin-right: 5px;
+.checkbox {
+    display: flex;
+    gap: 8px;
 }
 
 /* BUTTON */
-form button {
-    margin-top: 15px;
-    width: 100%;
-    padding: 10px;
-    background-color: #ddd;
-    border: 1px solid #999;
-    cursor: pointer;
+button {
+    width: 160px;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: #eee;
+    margin-top: auto;
 }
 
-form button:hover {
-    background-color: #bbb;
-}
-
-/* EMPLOYEE SECTION */
-.employees {
+* EMPLOYEE SECTION */ .employees {
     border: 1px solid #999;
     margin: 30px;
     padding: 20px;
