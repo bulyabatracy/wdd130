@@ -49,11 +49,6 @@ header nav ul li a {
     font-size: 14px;
 }
 
-/* REMOVE DOUBLE BORDERS BETWEEN LINKS */
-header nav ul li a {
-    border-right: none;
-}
-
 header nav ul li:last-child a {
     border-right: 1px solid #555;
 }
@@ -95,8 +90,6 @@ main {
 .main-content h1 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 1.5 rem;
-    font-size: 1.5 rem;
     font-family: "Times New Romans", "Georgia", serif;
     color: #055a05;
 }
@@ -131,7 +124,7 @@ main {
     background-color: white;
     border: 1px solid #999;
     border-radius: 8px;
-    padding: 1.5 rem;
+    padding: 1rem;
 }
 
 /* Make full-width elements span both columns */
@@ -194,9 +187,8 @@ button {
 }
 
 .employees h2 {
-    margin-bottom: 20px;
-    text-align: center;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .employee-profiles {
