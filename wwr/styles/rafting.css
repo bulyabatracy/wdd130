@@ -63,16 +63,6 @@ header nav ul li a:hover {
     background-color: #d0d0d0;
 }
 
-/* COMPANY INFO */
-.company-info {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.company-info h1 {
-    margin-bottom: 10px;
-}
-
 /* MAIN CONTAINER */
 main {
     width: 85%;
@@ -85,32 +75,71 @@ main {
     margin: 20px 0;
 }
 
+.company-info h1 {
+    margin-bottom: 10px;
+}
+
 /* MAIN CONTENT (MAP + FORM) */
 .main-content {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 50px;
-    margin: 30px 0;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-content > label {
+    font-weight: bold;
+    color: #055a05;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5 rem;
+    font-size: 1.5 rem;
+    font-family: "Times New Romans", "Georgia", serif;
+    color: #055a05;
 }
 
 /* MAP (LEFT) */
 .map {
     flex: 1;
+    min-width: 280px;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 10px;
 }
 
 .map iframe {
     width: 100%;
-    height: 260px;
-    border: 1px solid black;
+    height: 350px;
+    border: none;
+    border-radius: 8px;
 }
 
-/* FORM (RIGHT) */
-form {
-    flex: 1;
+.hero-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.form {
+    flex: 1;
+    min-width: 320px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 1.5 rem;
+}
+
+/* Make full-width elements span both columns */
+form p,
+form textarea,
+form button,
+.checkbox {
+    grid-column: span 2;
 }
 
 /* INPUTS */
@@ -127,9 +156,22 @@ textarea {
 }
 
 /* CHECKBOX */
+.checkbox-group {
+    margin: 1.5rem 0;
+}
+
 .checkbox {
     display: flex;
-    gap: 8px;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox input {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
 }
 
 /* BUTTON */
@@ -141,24 +183,52 @@ button {
     margin-top: auto;
 }
 
-* EMPLOYEE SECTION */ .employees {
+/* EMPLOYEE SECTION */
+.employees {
     border: 1px solid #999;
-    margin: 30px;
-    padding: 20px;
+    margin: 3rem 0;
+    padding: 1.5rem;
     text-align: center;
+    border-radius: 8px;
+    background-color: white;
 }
 
 .employees h2 {
     margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.employee-list {
+.employee-profiles {
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
 }
 
-.employee-list img {
-    width: 80px;
+.employee-card {
+    text-align: center;
+    padding: 1 rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.employee-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.employee-card p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.employee-card .employee-title {
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
 }
 
 /* FOOTER */
@@ -175,7 +245,6 @@ button {
 
 .socialmedia img {
     width: 30px;
-    align-items: center;
 }
 
 .footer p {
