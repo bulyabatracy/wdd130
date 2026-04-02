@@ -206,17 +206,10 @@ button {
 
 .employee-card {
     text-align: center;
-    padding: 1 rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
 }
 
-.employee-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
+.employee card img {
+    width: 20px;
 }
 
 .employee-card p {
@@ -229,6 +222,7 @@ button {
     font-weight: normal;
     font-size: 0.85rem;
     margin-top: 0.25rem;
+    align-items: center;
 }
 
 /* FOOTER */
