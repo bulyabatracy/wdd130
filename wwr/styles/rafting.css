@@ -53,11 +53,6 @@ header nav ul li:last-child a {
     border-right: 1px solid #555;
 }
 
-/* HOVER EFFECT (optional but nice) */
-header nav ul li a:hover {
-    background-color: #d0d0d0;
-}
-
 /* MAIN CONTAINER */
 main {
     width: 85%;
