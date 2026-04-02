@@ -103,3 +103,5 @@ textarea {
     text-align: center;
     width: 100%;
 }
+
+<form > <label > Name</label > <input type="text" placeholder="Placeholder" > <label > Email</label > <input type="email" placeholder="Placeholder" > <p > Message Purpose</p > <label > <input type="radio" id="purpose1" name="purpose" value="general" > General Inquiry</label > <label > <input type="radio" id="purpose2" name="purpose" value="reservation" > Reservation Question</label > <label > <input type="radio" id="purpose3" name="purpose" value="suggestion" > Website Suggestion</label > <label > Message</label > <textarea placeholder="Type here" > </textarea > <div checkbox-group > <label class="checkbox" > <input type="checkbox" id="newsletter" name="newsletter" > Please subscribe me to the monthly newsletter</label > </div > <button type="Get in Touch" > Get in Touch !</button > modify that

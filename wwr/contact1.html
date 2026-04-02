@@ -30,76 +30,90 @@
     </header>
 
     <main>
-
-        <!-- COMPANY INFO (CENTERED) -->
-        <section class="company-info">
-            <h1>White Water Rafting Company</h1>
-            <p><strong>123 Main River Street</strong></p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 272 </p>
-            <p>info@whitewater.com</p>
-        </section>
-
-        <!-- MAP + FORM -->
-        <section class="contact-layout">
-
-            <!-- LEFT-CENTERED: MAP -->
-            <div class="map-box">
-                <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
+        <form> <label> Name</label> <input type="text" placeholder="Placeholder"> <label>
+                Email</label>
+            <input type="email" placeholder="Placeholder">
+            <p> Message Purpose</p> <label> <input type="radio" id="purpose1" name="purpose"
+                  value="general"> General Inquiry</label> <label> <input type="radio" id="purpose2"
+                  name="purpose" value="reservation"> Reservation Question</label> <label> <input
+                  type="radio" id="purpose3" name="purpose" value="suggestion"> Website
+                Suggestion</label>
+            <label> Message</label> <textarea placeholder="Type here"> </textarea>
+            <div checkbox-group> <label class="checkbox"> <input type="checkbox" id="newsletter"
+                      name="newsletter"> Please subscribe me to the monthly newsletter</label>
             </div>
+            <button type="Get in Touch"> Get in Touch !</button> modify that
 
-            <!-- RIGHT-CENTERED: FORM -->
-            <form class="form-box">
+            <!-- COMPANY INFO (CENTERED) -->
+            <section class="company-info">
+                <h1>White Water Rafting Company</h1>
+                <p><strong>123 Main River Street</strong></p>
+                <p>Kolob, California</p>
+                <p>+1 999 999 272 </p>
+                <p>info@whitewater.com</p>
+            </section>
 
-                <label>Name</label>
-                <input type="text" placeholder="Placeholder">
+            <!-- MAP + FORM -->
+            <section class="contact-layout">
 
-                <label>Email</label>
-                <input type="email" placeholder="Placeholder">
+                <!-- LEFT-CENTERED: MAP -->
+                <div class="map-box">
+                    <iframe
+                      src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
+                </div>
 
-                <p>Message Purpose</p>
+                <!-- RIGHT-CENTERED: FORM -->
+                <form class="form-box">
 
-                <label><input type="radio" name="purpose"> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
+                    <label>Name</label>
+                    <input type="text" placeholder="Placeholder">
 
-                <label>Message</label>
-                <textarea placeholder="Type here"></textarea>
+                    <label>Email</label>
+                    <input type="email" placeholder="Placeholder">
 
-                <label class="checkbox">
-                    <input type="checkbox">
-                    Please Subscribe me to the monthly newsletter
-                </label>
+                    <p>Message Purpose</p>
 
-                <button type="submit">Get in Touch!</button>
+                    <label><input type="radio" name="purpose"> General Inquiry</label>
+                    <label><input type="radio" name="purpose"> Reservation Question</label>
+                    <label><input type="radio" name="purpose"> Website Suggestion</label>
 
-            </form>
+                    <label>Message</label>
+                    <textarea placeholder="Type here"></textarea>
 
-        </section>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
 
-        <!-- EMPLOYEES -->
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
+                    <button type="submit">Get in Touch!</button>
 
-            <div class="employee-cards">
+                </form>
 
-                <figure>
-                    <img src="images/photo.webp" alt="Employee">
-                    <figcaption>Employee Profile</figcaption>
-                </figure>
+            </section>
 
-                <figure>
-                    <img src="images/photo2.webp" alt="Employee">
-                    <figcaption>Employee Profile</figcaption>
-                </figure>
+            <!-- EMPLOYEES -->
+            <section class="employees">
+                <h2>We Are Here to Serve You</h2>
 
-                <figure>
-                    <img src="images/photo3.webp" alt="Employee">
-                    <figcaption>Employee Profile</figcaption>
-                </figure>
+                <div class="employee-cards">
 
-            </div>
-        </section>
+                    <figure>
+                        <img src="images/photo.webp" alt="Employee">
+                        <figcaption>Employee Profile</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/photo2.webp" alt="Employee">
+                        <figcaption>Employee Profile</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/photo3.webp" alt="Employee">
+                        <figcaption>Employee Profile</figcaption>
+                    </figure>
+
+                </div>
+            </section>
 
     </main>
 
