@@ -27,58 +27,49 @@
     <main>
         <section class="company-info">
             <h1>Tracie White Water Rafting Company</h1>
-            <p>123 Main River Street<br>Kolob, California<br>+1 999 999 9999<br>info@whitewater.com
+            <p>North West<br>Victoria Nile, Uganda<br>+256 999 000 333<br>info@whitewater.com
             </p>
         </section>
         <section class="hero-container">
             <div class="map">
-                <iframe src="https://www.google.com/maps?q=Kolob,California&output=embed"></iframe>
+                <iframe
+                  src="https://www.google.com/maps?q=Murchison+Falls+National+Park&output=embed">width="100%"</iframe>
             </div>
-            <div class="main-content">
-                <form>
 
-                    <!-- NAME -->
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Placeholder">
+            <form>
+                <fieldset>
+                    <label>First Name:<input type="text" id="fname" name="fname"></label>
+                    <label>Last Name:<input type="text" id="1name" name="1name"></label>
+                    <label>Email Address:<input type="email" id="email" name="email"></label>
+                </fieldset>
 
-                    <!-- EMAIL -->
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Placeholder">
+                <fieldset>
+                    <label>Message Purpose</label><br>
+                    <input type="radio" name="op1" value="op1">General Inquiry<br>
+                    <input type="radio" name="op2" value="op2">Reservation Question<br>
+                    <input type="radio" name="op3" value="op3">Website Suggestion<br>
+                </fieldset>
 
-                    <!-- MESSAGE PURPOSE -->
-                    <p>Message Purpose</p>
 
-                    <label for="purpose1">
-                        <input type="radio" id="purpose1" name="purpose" value="general">
-                        General Inquiry
-                    </label>
+                <fieldset>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message"
+                      placeholder="Type here the message"></textarea>
+                </fieldset>
 
-                    <label for="purpose2">
-                        <input type="radio" id="purpose2" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                <fieldset>
+                    <input type="checkbox" id="subscription" name="subscription">
+                    <label for="subscription">Please subscribe me to the monthly
+                        newsletter</label>
+                </fieldset>
 
-                    <label for="purpose3">
-                        <input type="radio" id="purpose3" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
 
-                    <!-- MESSAGE -->
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Type here"></textarea>
-
-                    <!-- CHECKBOX -->
-                    <div class="checkbox-group">
-                        <label for="newsletter" class="checkbox">
-                            <input type="checkbox" id="newsletter" name="newsletter">
-                            Please subscribe me to the monthly newsletter
-                        </label>
-                    </div>
-
-                    <!-- SUBMIT BUTTON -->
+                <fieldset>
                     <button type="submit">Get in Touch!</button>
+                </fieldset>
 
-                </form>
+
+            </form>
 
 
             </div>
@@ -87,24 +78,35 @@
 
 
         <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-            <div class="employee-profiles">
-                <div class="employee card">
 
-                    <img src="images/employee1.jpg" alt="nangi employee">
-                    <p>Nangi</p>
-                    <div class="employee title">Lead Guide</div>
-                </div>
+            <div>
+                <h2>We Are Here to Serve You</h2>
+            </div>
 
-                <div class="employee card">
-                    <img src=" images/employee2.webp" alt=" baker employee">
-                    <p>Baker</p>
-                    <div class="employee title">Trip planner</div>
-                </div>
-                <div class="employee card">
-                    <img src="images/employee3.webp" alt="warner employee">
-                    <p>Warner</p>
-                    <div class="employee-title">Customer Experience</div>
+            <div>
+                <div class="employee-profiles">
+
+                    <div class="employee card">
+                        <img src="images/employee1.jpg" alt="nangi employee" height="300px"
+                          width="300px">
+                        <p>Nangi</p>
+                        <div class=" employee title">Lead Guide
+                        </div>
+                    </div>
+
+                    <div class="employee card">
+                        <img src=" images/employee2.webp" alt=" baker employee" height="300px"
+                          width="300px">
+                        <p>Baker</p>
+                        <div class=" employee title">Trip planner
+                        </div>
+                    </div>
+                    <div class="employee card">
+                        <img src="images/employee3.webp" alt="warner employee" height="300px"
+                          width="300px">
+                        <p>Warner</p>
+                        <div class="employee-title">Customer Experience</div>
+                    </div>
                 </div>
             </div>
         </section>
