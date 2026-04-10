@@ -151,7 +151,6 @@ button {
 .employees h2 {
     margin-bottom: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .employee-profiles {
@@ -307,7 +306,6 @@ button {
     /* ✅ THIS puts h1 above p */
     align-items: center;
     text-align: center;
-    color: white;
 
 }
 
