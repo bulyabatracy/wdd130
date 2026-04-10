@@ -46,6 +46,7 @@ header nav ul li a {
     text-decoration: none;
     border: 1px solid #555;
     font-size: 14px;
+    text-decoration: none;
 }
 
 header nav ul li:last-child a {
@@ -89,6 +90,7 @@ main {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem 0;
+    position: relative;
 }
 
 .hero-container h2 {
@@ -192,6 +194,7 @@ button {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    text-decoration: none;
 }
 
 .socialmedia {
@@ -286,6 +289,7 @@ button {
 }
 
 .hero h1 {
+    position: absolute;
     top: 20px;
 
     /* padding: 10px 20px; */
@@ -313,9 +317,10 @@ button {
 .hero-sub h1 {
     /* background: var(--accent1-color);
     color: white; */
-    margin-top: 10px;
+    margin-top: 0;
     font-size: 40px;
     width: 80%;
+    color: var(--primary-color);
 
     /* white-space: nowrap; */
 }
